@@ -1,0 +1,170 @@
+/*.menu {
+  background-color: rgb(238, 238, 117);
+  color: white;
+  display: grid;
+  padding: 20px;
+  place-items: center;
+  text-decoration: none;
+  gap: 75px;
+  list-style-type: none;
+}
+.menu :hover {
+  background-color: rgb(212, 105, 123);
+  color: white;
+}
+.h1 {
+  text-transform: capitalize;
+  font-size: 75px;
+  text-align: center;
+}
+
+.search {
+  background-color: rgb(3, 108, 99);
+  display: flex;
+  place-items: center;
+  padding: 20px;
+  width: 90%;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+  color: aliceblue;
+}
+.items {
+  display: grid;
+  padding: 30px 20px;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  margin: 10px;
+}
+.item {
+  width: 100;
+  height: 100;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin: 10px solid black;
+}
+.item img:hover {
+  transform: scale(1.04);
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav {
+  background-color: rgb(208, 217, 49);
+  display: grid;
+  place-items: center;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 1.2s ease-in;
+}
+nav ul a:hover {
+  background-color: aquamarine;
+  color: black;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.item img {
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Maintain aspect ratio */
+  margin: 3px; /* Add margin for spacing */
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s, ease;
+}
+.item img:hover {
+  transform: scale(1.04);
+}
+.item h2 {
+  padding: 5px;
+  text-align: center;
+}
+.item button {
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(213, 239, 240);
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s ease;
+}
+.item button:hover {
+  transform: scale(1.04);
+}
+@media screen and (max-width: 1000px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.address {
+  margin: 5px;
+  padding: 20px;
+  background-color: rgb(197, 237, 240);
+}
+.add {
+  border: 3px solid green;
+  background-color: greenyellow;
+  padding: 20px;
+  margin: 5px;
+}
+.pay {
+  border: 3px solid rgb(226, 141, 12);
+  background-color: beige;
+  padding: 20px;
+  margin: 5px;
+}
+.placeorder {
+  border: 3px solid rgb(251, 7, 47);
+  background-color: rgb(249, 198, 207);
+  padding: 20px;
+  margin: 5px;
+  place-items: center;
+  text-align: center;
+  font-size: larger;
+}
+.placeorder button {
+  padding: 5px;
+  margin: 3px;
+  cursor: pointer;
+  place-items: center;
+}
+.placeorder button:hover {
+  transform: scale(1.04);
+}
+.placeorder img {
+  width: auto;
+  height: auto;
+  place-items: initial;
+}
+.last {
+  background-color: rgb(241, 225, 206);
+  font-size: 100;
+  margin: 30px;
+  padding: 30pxpx;
+}
